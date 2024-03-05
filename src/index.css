@@ -4,5 +4,12 @@
 
 body {
   height:  100vh;
-  background-image: linear-gradient(to right bottom, #252525, #1d1d1d, #161616, #0d0d0d, #000000);
+  background: linear-gradient(to right bottom, #252525, #1d1d1d, #161616, #0d0d0d, #000000);
+
+}
+
+@layer components {
+  .bgCard {
+     @apply bg-gradient-to-br from-neutral-800 via-neutral-900 to-black
+  }
 }
